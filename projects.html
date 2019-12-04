@@ -51,18 +51,42 @@
                 <h1>Projects</h1>
             </div>
             <div class="jumbotron container-fluid" id="all">
-                <div id="poe">
-                    <div class="row csa" id="recipe-app">
+
+
+                <!--Projects-->
+
+
+                <div>
+                    <div class="row" id="printer-aoi-circuit">
+                        <div class="col-md-4">
+                            <h3 class="text-center">Printer AOI Logic</h3>
+                            <h4 class="text-center">November 20th, 2019 to December 6th, 2019</h4>
+                            <h5 class="text-center">Digital Electronics</h5>
+                            <a href="#recipe-app" class="thumbnail"><img src="" alt="Image" text="Insert Image Here."/></a>
+                        </div><br/> <!--Image/Title-->
+
+                        <div class="col-md-8 text-left well container">
+                            <p>
+                                We created a model of the logic expression a printer would use to warn its user when it needs maintenance (eg. refill ink). For this we decided a warning would be raised if there is no paper in the printer, no black ink, or (if the printer is set to print in color) no cyan, magenta, or yellow ink. With this in mind we created a truth table outlining the resulting output of every combination of inputs. From this table I created an unsimplified logic expression using the maxterms, then simplified the expression. The purpose of doing so is to reduce the amount of AOI logic components required to make the printer's warning system. Using a CDS I modeled the circuit to guarantee that it functions the way we intended. Once we confirmed the logic expression was correct, the circuit was created on a breadboard to demonstrate concretely how our design works. 
+                            </p>
+                            <p>
+                                <a href="Thai_Projects_Documentation/DE_AOI_Logic.pdf" target="_blank">Project Documentation</a>
+                            </p>
+                        </div> <!--Text-->
+                    </div> <!--Machine Control-->
+                </div>
+                <div>
+                    <div class="row" id="recipe-app">
                         <div class="col-md-4">
                             <h3 class="text-center">Recipe App</h3>
                             <h4 class="text-center">February 11, 2019 to April 11, 2019</h4>
                             <h5 class="text-center">Computer Science Principles</h5>
                             <a href="#recipe-app" class="thumbnail"><img src="Images/CSA_Recipe_App.png" alt="Image"/></a>
                         </div><br/> <!--Image/Title-->
-                        
+
                         <div class="col-md-8 text-left well container">
                             <p>
-                                    As a 3-person team, we created an Android app to provide recipe recommendations based on the quantity of ingredients available to the user. 
+                                    As a 3-person team, we created an Android app to provide recipe recommendations based on the quantity of ingredients available to the user.
                                     I designed the structure of the ingredient and recipe databases for efficient access by the program, and wrote the functionality for inputting ingredients and recommending recipes.
                             </p>
                             <!--<p>
@@ -70,14 +94,14 @@
                             </p>-->
                         </div> <!--Text-->
                     </div> <!--Machine Control-->
-                    <div class="row csa" id="card-game">
+                    <div class="row" id="card-game">
                         <div class="col-md-4">
                             <h3 class="text-center">Card Game: Solitaire</h3>
                             <h4 class="text-center">April 15, 2019 to May 1, 2019</h4>
                             <h5 class="text-center">Principles of Engineering</h5>
                             <a href="#card-game" class="thumbnail"><img src="https://github.com/Rith-GitHub/cardGame/blob/master/cards/2clubs.GIF?raw=true" alt="Image"/></a>
                         </div><br/> <!--Image/Title-->
-                        
+
                         <div class="col-md-8 text-left well container">
                             <p>
                                     The objective of this project was to create a card game in java and making use of the visual ui we were given.
@@ -90,20 +114,20 @@
                         </div> <!--Text-->
                     </div> <!--Card Game app-->
                 </div>
-                <div id="poe">
-                    <div class="row poe" id="machine-control">
+                <div>
+                    <div class="row" id="machine-control">
                         <div class="col-md-4">
                             <h3 class="text-center">Machine Control</h3>
                             <h4 class="text-center">April 19, 2018 to May 4, 2018</h4>
                             <h5 class="text-center">Principles of Engineering</h5>
                             <a href="#machine-control" class="thumbnail"><img src="Images/POE_Machine_Control.JPG" alt="Image"/></a>
                         </div><br/> <!--Image/Title-->
-                        
+
                         <div class="col-md-8 text-left well container">
                             <p>
                                     In this project our team's goal was to create the software for a residential elevator servicing three floors, as well as to make a design for the elevator and model it using VEX parts and its programming language RobotC.
                                     Our elevator design moves the cab using sprockets and chains (the cab is attatched to the chain), and has touch sensors at each floor that allows the system to know which floor the cab is at and when it arrives at a floor.
-                                    Additionally, there was a button on each floor to call the cab to their respective floor. 
+                                    Additionally, there was a button on each floor to call the cab to their respective floor.
                                     The software was designed so that whenever a request for the cab to move to a different floor was made via the buttons, the program would detect which floor the cab is on to determine which direction the cab should move, and once moving, it will continue until the sensor on the requested floor detects the cab.
                                     If five seconds pass without any floors being called the cab moves down to the first floor.
                                     Because my goal was the software behind our elevator my main contribution was the creation of the program as well as its troubleshooting.
@@ -113,14 +137,14 @@
                             </p>
                         </div> <!--Text-->
                     </div> <!--Machine Control-->
-                    <div class="row poe" id="mechanical-winch">
+                    <div class="row" id="mechanical-winch">
                         <div class="col-md-4">
                             <h3 class="text-center">Mechanical Winch</h3>
                             <h4 class="text-center">October 16, 2017 to October 20, 2017</h4>
                             <h5 class="text-center">Principles of Engineering</h5>
                             <a href="#mechanical-winch" class="thumbnail"><img src="Images/POE_Mechanical_Winch.JPG" alt="Image"/></a>
                         </div><br/> <!--Image/Title-->
-                        
+
                         <div class="col-md-8 text-left well container">
                             <p>
                                     The objective of this project was to create a winch that could lift a weight of 100 grams up 30 cm using an electrical motor.
@@ -134,7 +158,7 @@
                         </div> <!--Text-->
                     </div> <!--Mechanical Winch Electrical Systems-->
                 </div>
-                <div id="cse">
+                <div>
                     <div class="row" id="hangman">
                         <div class="col-md-4 col-xs-12">
                             <h3 class="text-center">Hangman</h3>
@@ -144,15 +168,15 @@
                                 <img src="Images/CSE_Python_Hangman.1.png" alt="Hangman"/>
                             </a>
                         </div><br/> <!--Image/Title-->
-                        
+
                         <div class="col-md-8 col-xs-12 text-left well container">
                             <p>
-                                The objective of this project was to use the coding language python to make a project that emulated the original game hangman. The game was to use a preset list of strings, and let the user guess the letters in the word the function randomly picked. The players ability to guess had to account as many different keyboard inputs as possible, such as punctuation, different casings (ex. A versus a), and inputting multiple characters at once, which the code was able to account for with different functions that we had learned to use. We had decided, and implemented, our code would treat letters of different casing the same, would ignore punctuation, and treat simultaneous inputs the same as several individual inputs. 
-                                
+                                The objective of this project was to use the coding language python to make a project that emulated the original game hangman. The game was to use a preset list of strings, and let the user guess the letters in the word the function randomly picked. The players ability to guess had to account as many different keyboard inputs as possible, such as punctuation, different casings (ex. A versus a), and inputting multiple characters at once, which the code was able to account for with different functions that we had learned to use. We had decided, and implemented, our code would treat letters of different casing the same, would ignore punctuation, and treat simultaneous inputs the same as several individual inputs.
+
                             </p>
                         </div> <!--Text-->
                     </div> <!--Hangman Python Project-->
-                    
+
                     <div class="row" id="space-invaders">
                         <div class="col-md-4">
                             <h3 class="text-center">Space Invaders</h3>
@@ -160,14 +184,16 @@
                             <h5 class="text-center">Computer Science and Engineering</h5>
                             <a href="#space-invaders" class="thumbnail"><img src="Images/CSE_Scratch_SpaceInvader.png" alt="Image"/></a>
                         </div><br/> <!--Image/Title-->
-                        
+
                         <div class="col-md-8 text-left well container">
                             <p>
-                                    The objective of this project was to practice different type of variables. The development of this project to meet the requirements consisted of two parts; Making the game functional and implement the variable types, and making the game simple. With my partner we traded these tasks every once in a while, where one of us added new features while the other simplified the code of existing features. In class we shared the work we had done and coordinated what work should be done next. Simplification and bug fixing were the most prominent challenges in developing the game because when we made separate modifications, the scipts sometimes contradicted each other. This was better avoided when we shared the changes we made in more detail and added comments within the script, so we knew what was already being done and which code would become repetitive. 
+                                    The objective of this project was to practice different type of variables. The development of this project to meet the requirements consisted of two parts; Making the game functional and implement the variable types, and making the game simple. With my partner we traded these tasks every once in a while, where one of us added new features while the other simplified the code of existing features. In class we shared the work we had done and coordinated what work should be done next. Simplification and bug fixing were the most prominent challenges in developing the game because when we made separate modifications, the scipts sometimes contradicted each other. This was better avoided when we shared the changes we made in more detail and added comments within the script, so we knew what was already being done and which code would become repetitive.
                             </p>
                         </div> <!--Text-->
                     </div> <!--Space Invader Scratch Project-->
                 </div>
+
+
             </div>
         </section>
         <footer class="jumbotron container-fluid" id="footer">
